@@ -15,11 +15,10 @@ def process_str_file(input_file):
                 merged_line = line.strip()
                 # 去掉空行
                 if merged_line:
-                    # print(merged_line + '，')
                     merged_line = merged_line + '，'
                     merged_lines.append(merged_line)
                     
         for item in merged_lines:       
             print(item, end='')
 # 使用示例
-process_str_file('../matt/stable.srt')
+process_str_file('test.srt')
