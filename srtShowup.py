@@ -1,3 +1,7 @@
+# 传递命令行参数
+import sys
+file_name = sys.argv[1]
+
 def process_str_file(input_file):
     # 打开输入文件和输出文件
     with open(input_file, 'r', encoding='utf-8') as input_file:
@@ -21,4 +25,5 @@ def process_str_file(input_file):
         for item in merged_lines:       
             print(item, end='')
 # 使用示例
-process_str_file('test.srt')
+# process_str_file('away.srt')
+process_str_file(file_name)
