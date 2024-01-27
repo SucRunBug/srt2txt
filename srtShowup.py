@@ -1,5 +1,9 @@
 # 传递命令行参数
 import sys
+# 检查命令行参数数量
+if len(sys.argv) != 2:
+    print("用法: python3 srtShowup.py <文件名>")
+    sys.exit(1)  # 退出脚本，返回非零表示错误
 file_name = sys.argv[1]
 
 def process_str_file(input_file):
